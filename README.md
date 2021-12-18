@@ -27,3 +27,6 @@ npx playwright install
  npx playwright test --project=chromium
 ```
 4. After test is finished, it'll automatically open html file with results
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
