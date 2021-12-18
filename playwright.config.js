@@ -9,6 +9,7 @@ const config = {
     headless: false,
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors: true,
+    screenshot:"only-on-failure",
   },
   reporter: [
     ["html", { outputFolder: "./src/playwright-report", open: "always" }],
