@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: docker run -it --rm --ipc=host mcr.microsoft.com/playwright:focal /bin/bash
+      - image: resident
         auth:
           username: itspecialbro@gmail.com
           password: ShakhMAN12!  # context / project UI env-var reference
