@@ -2,6 +2,7 @@
 Test task for Limavi: part 1 - UI Automation
 
 ## Installation
+1. Install project via .zip file or create new project and clone on Vs Code
 1. Install node js: 
 
 Download the installer from NodeJS WebSite.
