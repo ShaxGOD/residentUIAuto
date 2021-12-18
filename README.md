@@ -3,14 +3,14 @@ Test task for Limavi: part 1 - UI Automation
 
 ## Installation
 1. Install project via .zip file or create new project and clone on Vs Code
-1. Install node js: 
+2. Install node js: 
 
 Download the installer from NodeJS WebSite.
 Run the installer.
 Follow the installer steps, agree the license agreement and click the next button.
 Restart your system/machine.
 
-2. Install Playwright
+3. You might need install Playwright
 ```bash
 npm i -D @playwright/test
 # install supported browsers
