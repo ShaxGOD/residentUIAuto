@@ -24,9 +24,9 @@ jobs:
           command: |
             npm test
       - store_test_results:
-          path: test-results
+          path: ./src/playwright-report
       - store_artifacts:
-          path: test-results
+          path: ./src/playwright-report
 workflows:
   build_tests:
     jobs:
