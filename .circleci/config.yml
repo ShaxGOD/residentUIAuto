@@ -19,4 +19,4 @@ jobs:
            npx playwright install
       - run:
           command: |
-            npx playwright test LogOutTest.spec.js
+            npx playwright test 
