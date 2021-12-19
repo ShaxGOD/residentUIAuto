@@ -9,11 +9,14 @@ jobs:
   run_tests:
     docker:
       - image: mcr.microsoft.com/playwright:v1.17.1-focal
+    environment:
+      NODE_ENV: development
     steps:
       - checkout
       - run:
           name: Install npm dependencies
           command: |
+            npm -g config set user root
             npm install --save
             npm i -D @playwright/test   
       - run:
