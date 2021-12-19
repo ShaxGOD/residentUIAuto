@@ -2,6 +2,6 @@
   "devDependencies": {
     "@playwright/test": "^1.17.1"
   },"scripts": {
-    "test:ci": "npx playwright test"
+    "test": "npx playwright test"
  }
 }
