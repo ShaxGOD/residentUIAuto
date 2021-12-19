@@ -8,7 +8,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: docker pull mcr.microsoft.com/playwright:focal
+      - image: mcr.microsoft.com/playwright:focal
     environment:
       NODE_ENV: development
     steps:
