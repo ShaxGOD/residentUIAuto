@@ -7,7 +7,9 @@ test.describe("Resident tests", () => {
 
     test.beforeAll(async ({},testInfo) => {
     testInfo.setTimeout(testInfo.timeout + 90000);
-    browser = await chromium.launch();
+    browser = await chromium.launch({
+      args: ['--disable-dev-shm-usage']
+    });
     context = await browser.newContext();
     page = await context.newPage();
     await page.goto("http://automationpractice.com/index.php");

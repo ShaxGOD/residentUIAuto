@@ -8,7 +8,7 @@ orbs:
 jobs:
   run_tests:
     docker:
-      - image: mcr.microsoft.com/playwright:v1.17.1-focal /bin/bash
+      - image: mcr.microsoft.com/playwright:v1.17.1-focal
     environment:
       NODE_ENV: development
     steps:
@@ -18,7 +18,7 @@ jobs:
           command: |
             npm install --save
             npm i -D @playwright/test    
-            npx playwright install     
+            npx playwright install    
       - run:
           name: Run Tests
           command: |
