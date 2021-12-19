@@ -11,7 +11,7 @@ jobs:
       - image: docker pull mcr.microsoft.com/playwright:focal
     environment:
       NODE_ENV: development
-      steps:
+    steps:
       - checkout
       - run:
           command: |
