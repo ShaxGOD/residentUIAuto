@@ -19,6 +19,7 @@ jobs:
             npm config set unsafe-perm true
             npm install
             npm i -D @playwright/test
+            npx playwright install
       - run:
           command: |
             npm config set user 0
