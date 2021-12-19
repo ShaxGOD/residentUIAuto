@@ -19,7 +19,6 @@ jobs:
             npm install --save
             npm i -D @playwright/test
             npx playwright install
-          background: true
       - run:
           name: Run Tests
           command: |
