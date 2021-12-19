@@ -1,8 +1,7 @@
 {
   "devDependencies": {
     "@playwright/test": "^1.17.1"
-  },
-   "scripts": {
-    "test": "LogOutTest.spec.js"
-  }
+  },"scripts": {
+    "test:ci": "npx playwright test"
+ }
 }
