@@ -8,9 +8,9 @@ orbs:
 jobs:
   run_tests:
     docker:
-      - image: circleci/node:16
-    # environment:
-    #   NODE_ENV: development
+      - image: mcr.microsoft.com/playwright:focal
+    environment:
+      NODE_ENV: development
     steps:
       - checkout
       - run:
