@@ -11,10 +11,13 @@ jobs:
       - image: docker pull mcr.microsoft.com/playwright:focal
     environment:
       NODE_ENV: development
-    steps:
-      
+      steps:
+      - checkout
       - run:
           command: |
+           npm install
            npm install -D @playwright/test
            npx playwright install
-           npx playwright test
+      - run:
+          command: |
+            npm test

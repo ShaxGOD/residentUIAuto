@@ -2,9 +2,6 @@
   "devDependencies": {
     "@playwright/test": "^1.17.1"
   },
-  "directories": {
-    "test": "./src/tests/"
-  },
   "scripts": {
     "test": "npx playwright test"
  }
