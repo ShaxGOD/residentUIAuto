@@ -22,7 +22,7 @@ jobs:
       - run:
           name: Run Tests
           command: |
-            npm test
+            npx playwright test
       - store_test_results:
           path: ./src/playwright-report
       - store_artifacts:
