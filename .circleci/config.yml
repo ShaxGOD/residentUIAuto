@@ -16,11 +16,16 @@ jobs:
       - run:
           name: Install npm dependencies
           command: |
+            npm config set user 0
+            npm config set unsafe-perm true
             npm install --save
-            npm i -D @playwright/test         
+            npm i -D @playwright/test    
+            npx playwright install     
       - run:
           name: Run Tests
           command: |
+            npm config set user 0
+            npm config set unsafe-perm true
             npx playwright test
       - store_test_results:
           path: ./src/playwright-report
