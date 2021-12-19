@@ -16,8 +16,11 @@ jobs:
       - run:
           command: npm install 
       - run:
-          command: npm i -D @playwright/test
+          command: | 
+          npm i -D @playwright/test
       -run:
-          command: npx playwright install
+          command: |
+          npx playwright install
       -run:
-          command: npx playwright test
+          command: | 
+          npx playwright test
