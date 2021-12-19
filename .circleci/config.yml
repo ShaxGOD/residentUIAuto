@@ -17,8 +17,12 @@ jobs:
           name: Install npm dependencies
           command: |
             npm install --save
+
+      - run:
+          name: Install playwright
+          command: |
             npm i -D @playwright/test
-            npx playwright install
+            npx playwright install           
       - run:
           name: Run Tests
           command: |
