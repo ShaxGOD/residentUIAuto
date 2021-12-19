@@ -14,13 +14,8 @@ jobs:
     steps:
       
       - run:
-          command: npm install 
-      - run:
-          command: | 
-          npm i -D @playwright/test
-      -run:
           command: |
-          npx playwright install
-      -run:
-          command: | 
-          npx playwright test
+            npm install 
+            npm i -D @playwright/test
+            npx playwright install
+            npx playwright test
