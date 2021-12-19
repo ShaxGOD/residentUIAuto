@@ -23,9 +23,9 @@ jobs:
           name: Run Tests
           command: |
             npm test
-      -store_test_results:
+      - store_test_results:
           path: test-results
-      -store_artifacts:
+      - store_artifacts:
           path: test-results
 workflows:
   build_tests:
