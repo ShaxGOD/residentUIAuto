@@ -4,6 +4,6 @@
     "playwright": "^1.17.1"
   },
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test --workers 3"
   }
 }
