@@ -19,10 +19,10 @@ jobs:
             npm -g config set user root
             npm install --save
             npm i -D @playwright/test   
+            npm playwright install
       - run:
           name: Run Tests
           command: |
-            chmod +x playwright
             npx playwright test
       - store_test_results:
           path: ./src/playwright-report
