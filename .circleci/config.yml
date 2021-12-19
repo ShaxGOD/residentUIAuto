@@ -7,10 +7,8 @@ orbs:
   node: circleci/node@4.7
 jobs:
   build:
-    # docker:
-    #   - image: mcr.microsoft.com/playwright:focal
-    environment:
-      NODE_ENV: development
+    docker:
+      - image: mcr.microsoft.com/playwright:focal
     steps:
       
       - run:
