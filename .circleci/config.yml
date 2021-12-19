@@ -16,8 +16,7 @@ jobs:
       - run:
           name: Install npm dependencies
           command: |
-            npm -g config set user root
-            npm install --save
+            sudo npm install -g browser-sync
       - run:
           name: Run Tests
           command: npm test
