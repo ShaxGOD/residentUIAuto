@@ -17,5 +17,5 @@ jobs:
           command: |
            npm install -D @playwright/test
            npx playwright install
-           echo dir
+           dir
            npx playwright test
