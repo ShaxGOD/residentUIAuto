@@ -18,7 +18,8 @@ jobs:
             npm config set user 0
             npm config set unsafe-perm true
             npm install
-            dir
       - run:
           command: |
+            npm config set user 0
+            npm config set unsafe-perm true
             npm test
