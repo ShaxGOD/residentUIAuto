@@ -8,7 +8,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: mcr.microsoft.com/playwright:bionic
+      - image: mcr.microsoft.com/playwright:focal
     environment:
       NODE_ENV: development
     steps:
@@ -18,8 +18,9 @@ jobs:
             npm config set user 0
             npm config set unsafe-perm true
             npm install
-            npm i -D @playwright/test
-            npx playwright install
+
+            chmod +x npm i -D @playwright/test
+            chmod +x npx playwright install
       - run:
           command: |
             npm config set user 0
