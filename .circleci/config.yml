@@ -11,6 +11,11 @@ jobs:
       - image: mcr.microsoft.com/playwright:v1.17.1-focal
     environment:
       NODE_ENV: development
+    deployment:
+      production:
+        branch: "main"
+        commands:
+          - sh ./deploy.sh
     steps:
       - checkout
       - run:
