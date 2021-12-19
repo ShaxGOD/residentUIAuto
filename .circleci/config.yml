@@ -6,22 +6,28 @@ version: 2.1
 orbs:
   node: circleci/node@4.7
 jobs:
-  build:
+  run_tests:
     docker:
-      - image: mcr.microsoft.com/playwright:focal
-    environment:
-      NODE_ENV: development
+      - image: circleci/node:10
+    # environment:
+    #   NODE_ENV: development
     steps:
       - checkout
       - run:
+          name: Install npm dependencies
           command: |
             npm config set user 0
             npm config set unsafe-perm true
-            npm install
+            npm install --save
             npm i -D @playwright/test
             npx playwright install
       - run:
+          name: Run Tests
           command: |
             npm config set user 0
             npm config set unsafe-perm true
             npm test
+workflows:
+  build_tests:
+    jobs:
+      - run_tests
