@@ -7,8 +7,8 @@ orbs:
   node: circleci/node@4.7
 jobs:
   build:
-    docker:
-      - image: mcr.microsoft.com/playwright:focal
+    # docker:
+    #   - image: mcr.microsoft.com/playwright:focal
     environment:
       NODE_ENV: development
     steps:
@@ -17,6 +17,4 @@ jobs:
           command: |
            npm install -D @playwright/test
            npx playwright install
-           cd src
-           cd tests
            npx playwright test
