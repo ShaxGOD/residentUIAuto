@@ -19,8 +19,6 @@ jobs:
             npm config set unsafe-perm true
             npm install
             dir
-            cd ..
-            dir
       - run:
           command: |
             npm test
