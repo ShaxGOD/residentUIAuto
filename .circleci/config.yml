@@ -18,12 +18,9 @@ jobs:
           command: |
             npm -g config set user root
             npm install --save
-            npm i -D @playwright/test   
-            npx playwright install
       - run:
           name: Run Tests
-          command: |
-            npm test
+          command: npm test
       - store_test_results:
           path: ./src/playwright-report
       - store_artifacts:
