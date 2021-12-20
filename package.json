@@ -3,9 +3,6 @@
     "@playwright/test": "^1.17.1"
   },
   "scripts": {
-    "test": "sudo npx playwright test"
-  },
-  "dependencies": {
-    "playwright":"1.17.1"
+    "test": "npx playwright test"
   }
 }
