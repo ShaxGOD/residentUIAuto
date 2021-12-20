@@ -16,7 +16,10 @@ jobs:
       - run:
           name: Install npm dependencies
           command: |
-            npm ci
+            su root
+            npm install
+            npm i -D @playwright/test
+            npx playwright install
       - run:
           name: Run Tests
           command: npm test
