@@ -19,7 +19,7 @@ jobs:
             npm install
             npm ci
             npm i -D @playwright/test
-            npx playwright install-deps
+            npx playwright install
       - run:
           name: Run Tests
           command: npm test
