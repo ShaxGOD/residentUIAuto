@@ -19,13 +19,9 @@ npx playwright install
 
 ## Usage
 1. Open Visual Studio Code and go to project folder
-2. To run test on all 3 browser (Chrome, Firefox, WebKit) type: 
+2. Run only on Chrome browser 
 ```bash
  npx playwright test
-```
-3. Run only on Chrome browser 
-```bash
- npx playwright test --project=chromium
 ```
 4. After test is finished, it'll automatically open html file with results
 
