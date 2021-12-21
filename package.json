@@ -3,6 +3,6 @@
     "@playwright/test": "^1.17.1"
   },
   "scripts": {
-    "test": "npx playwright test --project=chromium"
+    "test": "npx playwright test"
   }
 }
