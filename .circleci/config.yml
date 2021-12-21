@@ -8,7 +8,7 @@ orbs:
 jobs:
   run_tests:
     docker:
-      - image: mcr.microsoft.com/playwright:v1.17.1-focal
+      - image: mcr.microsoft.com/playwright:focal
     environment:
       NODE_ENV: development
     steps:
